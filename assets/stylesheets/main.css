@@ -89,8 +89,13 @@ body {
   width: 25%;
 }
 
+.col-3-4 {
+  width: 75%;
+}
+
 .col-1-3,
-.col-1-4 {
+.col-1-4,
+.col-3-4 {
   display: inline-block;
   vertical-align: top;
 }
@@ -98,6 +103,10 @@ body {
 .col-1-3,
 .col-1-4 {
   padding-right: 20px;
+}
+
+.col-3-4 {
+  padding-right: 60px;
 }
 
 .container {
@@ -131,7 +140,7 @@ body {
 */
 
 .top-line {
-  width: 1420px;
+  max-width: 1420px;
   height: 7px;
   background: #e2e2e2;
 }
@@ -215,25 +224,32 @@ body {
 
 .nav {
     text-align: right;
-    background: url(images/active-link.png) 50% -1px no-repeat;
-  }
-  
-  .nav li {
-    display: inline-block;
-    text-align: left;
-    margin: 44px 30px 52px 30px;
-    vertical-align: top;
-  }
-  
-  .nav li:last-child {
-    margin-right: 0;
   }
 
-  .nav li p {
-    color: #474747;
-    font-size: 20px;
-    text-transform: uppercase; 
-  }
+.index-pointer{
+  background: url(images/active-link.png) 50% -1px no-repeat;
+}
+
+.contacts-pointer {
+  background: url(images/active-link.png) 98% -1px no-repeat;
+}
+
+.nav li {
+  display: inline-block;
+  text-align: left;
+  margin: 44px 30px 52px 30px;
+  vertical-align: top;
+}
+
+.nav li:last-child {
+  margin-right: 0;
+}
+
+.nav li p {
+  color: #474747;
+  font-size: 20px;
+  text-transform: uppercase; 
+}
 
 /*
   ========================================
@@ -353,7 +369,7 @@ td:first-child,
 td:last-child {
   width: 377px;
   background: linear-gradient(-45deg, rgba(0, 0, 0, 0) 49.9%, #a5a5a5 49.9%, #a5a5a5 60%, rgba(0, 0, 0, 0) 60% ), linear-gradient(-45deg, #a5a5a5 10%, rgba(0, 0, 0, 0) 10% );
-  background-size: 0.3em 0.3em
+  background-size: 0.3em 0.3em;
   /* background: repeating-linear-gradient(-45deg, #a5a5a5, #a5a5a5 1px, #fff 1.1px, #fff 5px); */
 }
 
@@ -391,15 +407,15 @@ td:last-child {
 */
 
 .bottom-line {
-  width: 1420px;
+  max-width: 1420px;
   height: 7px;
   background: linear-gradient(-45deg, rgba(0, 0, 0, 0) 49.9%, #a5a5a5 49.9%, #a5a5a5 60%, rgba(0, 0, 0, 0) 60% ), linear-gradient(-45deg, #a5a5a5 10%, rgba(0, 0, 0, 0) 10% );
-  background-size: 0.3em 0.3em
+  background-size: 0.3em 0.3em;
 }
 
 footer {
   background-color: #fbfbfb;
-  width: 1420px;
+  max-width: 1420px;
   height: 70px;
 }
 
@@ -421,3 +437,123 @@ footer p {
   padding-top: 24px;
   float: left;
 }
+
+/*
+  ========================================
+  Contact us
+  ========================================
+*/
+
+.contacts-entry h1 {
+  font: 400 24px/18px "Bebas Neue";
+}
+
+.contacts-entry p {
+  color: #9e9e9e;
+  font: italic 12px/18px "Helvetica Neue";
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.contacts-line {
+  height: 7px;
+  background: linear-gradient(-45deg, rgba(0, 0, 0, 0) 49.9%, #a5a5a5 49.9%, #a5a5a5 60%, rgba(0, 0, 0, 0) 60% ), linear-gradient(-45deg, #a5a5a5 10%, rgba(0, 0, 0, 0) 10% );
+  background-size: 0.3em 0.3em;
+  margin-bottom: 38px;
+}
+
+.p1 {
+  font: 400 12px/14px "Helvetica Neue";
+  padding-bottom: 30px;
+} 
+
+.p2 {
+  font: 500 12px/18px "Helvetica Neue";
+}
+
+.aside-cont-1 {
+  vertical-align: bottom;
+  padding-right: 0;
+}
+
+.aside-cont-1 h5 {
+  padding-bottom: 13px;
+}
+
+.aside-cont-2 {
+  vertical-align: top;
+  padding-right: 0;
+}
+
+.aside-cont-2 .contacts-line {
+  margin-bottom: 20px;
+  margin-top: 13px;
+}
+
+form {
+  margin-top: 8px;
+  margin-bottom: 270px;
+}
+
+input,
+textarea,
+button {
+  font: 400 12px/28px "Bebas Neue";
+  text-transform: uppercase;
+}
+
+::-webkit-input-placeholder {
+  color: #c6c6c6;
+}
+
+.register-box input,
+.register-box textarea {
+  border: 1px solid #eeeeee;
+  background-color: #fafafa;
+  color: #c6c6c6;
+  border-radius: 5px;
+  display: block;
+  margin: 12px 0 12px 0;
+  padding: 12px 13px;
+}
+
+.register-box input {
+  width: 217px;
+}
+
+.register-box textarea {
+  width: 492px;
+  height: 203px;
+}
+
+.register-box button {
+  border: 0;
+  background-color: #fff;
+  display: block;
+  width: 80px;
+  /* height: 13px; */
+}
+
+.register-box button .icon-more {
+  margin-top: 4px;
+}
+
+.aside-cont-3 {
+  vertical-align: top;
+  padding-right: 0;
+}
+
+.aside-cont-3 a {
+  color: #474747;
+}
+
+.aside-cont-3 h5 {
+  margin-top: 30px;
+  margin-bottom: 13px;
+}
+
+.aside-cont-3 .contacts-line {
+  margin-bottom: 20px;
+}
+
+
