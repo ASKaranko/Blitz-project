@@ -106,12 +106,23 @@ body {
 }
 
 .col-3-4 {
-  padding-right: 60px;
+  padding-right: 35px;
 }
 
 .container {
   margin: 0 auto;
   width: 940px;
+}
+
+.my-flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 74%;
 }
 
 
@@ -234,6 +245,10 @@ body {
   background: url(images/active-link.png) 98% -1px no-repeat;
 }
 
+.projects-pointer {
+  background: url(images/active-link.png) 73.5% -1px no-repeat;
+}
+
 .nav li {
   display: inline-block;
   text-align: left;
@@ -342,8 +357,8 @@ body {
   float: left;
 }
 
-.col-1-3 h5 {
-  margin-top: 20px;
+.spaceh h5 {
+  padding-top: 20px;
 }
 
 .col-1-3 a {
@@ -360,13 +375,12 @@ body {
   ========================================
 */
 
-
-tr {
+.index-table {
   height: 29px;
 }
 
-td:first-child,
-td:last-child {
+.index-table td:first-child,
+.index-table td:last-child {
   width: 377px;
   background: linear-gradient(-45deg, rgba(0, 0, 0, 0) 49.9%, #a5a5a5 49.9%, #a5a5a5 60%, rgba(0, 0, 0, 0) 60% ), linear-gradient(-45deg, #a5a5a5 10%, rgba(0, 0, 0, 0) 10% );
   background-size: 0.3em 0.3em;
@@ -543,6 +557,7 @@ button {
   padding-right: 0;
 }
 
+.aside-cont-2 a,
 .aside-cont-3 a {
   color: #474747;
 }
@@ -556,4 +571,74 @@ button {
   margin-bottom: 20px;
 }
 
+/*
+  ========================================
+  Contact us
+  ========================================
+*/
+
+.projects-table {
+  height: 14px;
+  font: 400 14px/18px "Bebas Neue";
+}
+
+.projects-table td {
+  padding-left: 7px;
+  padding-right: 7px;
+  border-right: 1px solid #474747;
+}
+
+.projects-table a {
+  text-decoration: none;
+  color: #474747;
+}
+
+.projects-table a:active {
+  color: #9a9a9a;
+}
+
+.projects-table td:last-child {
+  border: 0;
+}
+
+.projects-table td:first-child {
+  padding-left: 0;
+}
+
+.jacket-for-flex {
+  position: relative;
+  width: 100%;
+  height: 1100px;
+  margin-top: 27px;
+}
+
+.my-flex-box {
+  flex-basis: 33%;
+  margin: auto;
+}
+
+.my-aside-box {
+  position: absolute;
+  top: 0;
+  left: 75%;
+  width: 24%;
+}
+
+.my-aside-box h5 {
+  padding-top: 31px;
+}
+
+.my-flex-box h3 {
+  padding-bottom: 7px;
+  padding-top: 16px;
+}
+
+.my-flex-box h5 {
+  padding-bottom: 23px;
+  color: #949393;
+}
+
+.my-flex-box p {
+  color: #acacac;
+}
 
